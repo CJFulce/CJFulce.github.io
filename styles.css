@@ -1,3 +1,57 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    background-color: rgb(37, 33, 33);
+    color: cornflowerblue;
+}
+/*wrapper uses flex box to align all items in a column, the font is edited as well*/
+.wrapper {
+    padding-top: 2vh;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1vh;
+    font-size: large;
+}
+/*Some color for my name, as it is the focus*/
+h1 {
+    color: forestgreen;
+}
+/*List customization, editing the bullet points, layout, and spacing in between li elements*/
+ul {
+    margin-top: 0.1rem;
+    list-style-type:disc;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+#highlight{
+    font-style: italic;
+}
+/*Profile image is set t a max width to keep proportion, border-radius gives the picture a rounder, sleeker look, and transition is added in for hover effect*/
+#port-img{
+    max-width: 300px;
+    height: auto;
+    display: block;
+    object-position: center;
+    border-radius: 95%;
+    overflow: hidden;
+    transition: transform 200ms ease-in;
+}
+/*Hover effect for profile picture*/
+#port-img:hover{
+    transform: scale(1.5);
+}
+footer {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+footer p, footer a {
+    margin: 0;
 }
